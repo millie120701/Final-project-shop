@@ -1,0 +1,414 @@
+
+*  {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar {
+    width: 100%;
+    height: 38px;
+    background-color: black;
+}
+
+.nav-bar h2{
+    color: white;
+    width: max-content;
+    margin-left: 50px;
+    padding-top: 5px;
+    font-family: "Airstrike Bullet";
+    letter-spacing: 2px;
+}
+.nav-bar .logo{
+    color: white;
+    margin-top: -24px;
+    font-size: 23px;
+    margin-left: 10px;
+    width: max-content;
+}
+
+.nav-bar .links {
+    display: flex;
+    gap: 6rem;
+    float: right;
+    margin-right: 14px;
+    list-style: none;
+    color: white;
+    margin-top: -29px;
+}
+
+.nav-bar .links a {
+    color: white;
+    text-decoration: none;
+    padding-left: 10px;
+
+}
+
+.nav-bar .links i {
+    font-size: 15px;
+
+}
+.toggle_btn{
+    display: none;
+}
+
+@media (max-width: 770px){
+    .toggle_btn {
+        color: white;
+        float: right;
+        margin-top: -31px;
+        margin-right: 10px;
+        font-size: 22px;
+        display: block;
+    }
+    .nav-bar .links {
+        display: none;
+    }
+
+}
+
+.nav-bar .links a:hover{
+    opacity: 0.8;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background: rgba(255 , 255 ,255 ,0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown-menu li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.dropdown-menu li a {
+    color: white;
+    text-decoration: none;
+
+}
+
+.dropdown-menu.open{
+    height: 200px;
+}
+
+.menu-advert{
+    height: 61px;
+    width: 70%;
+    border: solid white 1px;;
+    margin-top: -62px;
+    background-color: white;
+    background: linear-gradient(to right, red, white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.top-menu{
+    background-color: black;
+    border-top: solid white;
+    border-bottom: solid white;;
+    height: 60px;
+}
+
+.search-container{
+    height: 60px;
+    margin-left: 65%;
+}
+
+form {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 250px; 
+    height: 50px;
+    background: white;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 4px solid white;
+    padding: 5px;
+}
+
+input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 42.5px;
+    line-height: 30px;
+    outline: 0;
+    border: 0;
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 0 20px;
+}
+
+.fa {
+    box-sizing: border-box;
+    padding: 10px;
+    width: 42.5px;
+    height: 42.5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+    background: #07051a;
+}
+
+form:hover,
+form:valid {
+    cursor: pointer;
+}
+
+form:valid a {
+  display: block;
+}
+
+.menu-advert h1{
+    color: black;
+    font-size: 22px;
+    text-align: center;
+    font-family: "Airstrike"
+}
+
+.menu-advert h3{
+    font-size: 14px;
+    text-align: center;
+    font-family: "Airstrike";
+    margin-top: 7px;
+}
+
+
+body{
+}
+
+.choice-container{
+    height: 40px;
+    border-bottom: solid white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+
+.choice-container .choice-bar{
+    display: flex;
+    gap: 10rem;
+    list-style: none;
+    color: white;
+}
+
+.choice-bar li a{
+    color:white;
+    text-decoration: none;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.choice-bar li a:hover{
+    border-bottom: 2px solid white;
+    transition-delay: 0.05s;
+}
+
+.main-img{
+    height: 775px;
+    background-image: url("https://i2-prod.business-live.co.uk/incoming/article17823824.ece/ALTERNATES/s1200b/0_WAU-2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main-img h1{
+    font-size: 60px;
+    padding-top: 250px;
+    padding-left: 50px;
+    font-family: "Doctor Glitch";
+    background: -webkit-linear-gradient(white, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main-img h2{
+    color: white;
+    font-size: 30px;
+    padding-left: 47px;
+    font-weight: 300;
+    font-family: "Airstrike"
+}
+.main-img p{
+    color: white;
+    font-size: 30px;
+    padding-left: 220px;
+    font-weight: 300;
+    font-family: "Airstrike"
+}
+
+
+.discover-bikes {
+    padding: 1.5rem 2em;
+    margin-top: 70px;
+    width: 190px;
+    margin-left: 50px;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 30px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    font-size: 17px;
+    font-family: "DIN Alternate"
+  }
+  
+  .discover-bikes:before {
+    content: "";
+    background: linear-gradient(
+      45deg,
+      #ff0000,
+      #ff7300,
+      #ff0000
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing-button-85 10s linear infinite;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 30px;
+  }
+  
+  @keyframes glowing-button-85 {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+  
+  .discover-bikes:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #222;
+    left: 0;
+    top: 0;
+    border-radius: 30px;
+  }
+
+  .why-electric {
+    padding: 1.5rem 2em;
+    margin-top: 70px;
+    width: 190px;
+    margin-left: 50px;
+    border: none;
+    outline: none;
+    color: black;
+    background-image: linear-gradient(to right, #FFA248 , red);
+    border: solid 3px black;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 30px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    font-size: 17px;
+    font-family: "DIN Alternate"
+  }
+
+  @media (max-width: 770px){
+    .dropdown-menu{
+        left: 2rem;
+        width: unset;
+        display: block;
+    }
+
+    .menu-advert{
+        width: 100%;
+        margin-left: 0;
+        margin-top: -11px;
+        border-bottom: solid black;
+    }
+    .search-container{
+        margin-left: -10px;
+        margin-top: -49px;
+    }
+
+    form{
+        border-radius: 12.5px;
+        height: 25px;
+    }
+    input{
+        height: 21.25px;
+        border-radius: 10px;
+    }
+    .fa{
+        height: 23px;
+        border-radius: 50%;
+        width: 24.25px;
+        padding-left: 6px;
+        padding-top: 6px;
+        font-size: 13px;
+        margin-top: -3px;
+
+    }
+    .choice-container .choice-bar li{
+        width: 4px;
+        float: left;
+    }
+    .choice-container{
+       padding-right: 100px;
+    }
+    .choice-container .choice-bar{
+        display: flex;
+        gap: 6rem;
+        list-style: none;
+        color: white;
+    }
+    .main-img h1{
+        font-size: 50px;
+    }
+    .main-img h2{
+        font-size: 25px;
+    }
+    .main-img p{
+        font-size: 25px;
+    }
+    .why-electric{
+        font-size: 14px;
+    }
+    .discover-bikes{
+        font-size: 14px;
+    }
+  }
