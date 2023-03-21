@@ -210,9 +210,14 @@
         <div class="news-container">
           <h3>Sign up for our Newsletter</h3>
           <p>Get 5% off your next purchase</p>
-          <div class="form-email">
-            <input type="email" id="email-send" placeholder="Type Email Here" />
-            <button class="email-btn">Sign Up</button>
+          <div class="form-email" action="contactform.php" method="POST">
+            <input
+              type="email"
+              name="mail"
+              id="email-send"
+              placeholder="Type Email Here"
+            />
+            <button class="email-btn" name="sign-up">Sign Up</button>
           </div>
         </div>
         <div class="socials">

@@ -193,8 +193,6 @@ form:valid a {
 }
 
 
-body{
-}
 
 .choice-container{
     height: 40px;
@@ -473,7 +471,7 @@ body{
     transform: translateY(50px) translateX(-50%);
   }
   #carousel img:hover {
-    cursor: 
+    cursor: pointer;
   }
   #carousel div.prev img {
     width: 300px;
