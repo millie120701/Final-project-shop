@@ -1,0 +1,22 @@
+
+p {
+    margin-bottom: 20px;
+  }
+
+.heading {
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: large;
+   padding: 40px 40px 10px;
+   color:antiquewhite
+}
+
+.article-body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    padding: 40px;
+    color: antiquewhite;
+}
+
+.article-body h2 {
+    margin-bottom: 10px;
+}
