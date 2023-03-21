@@ -418,15 +418,17 @@ body{
   .bottom-container-text{
     margin-top: -10px;
     height: 50x;
-    background-color: black;
   }
 
   .bottom-container-text h1{
     font-family: "Squarefont";
     font-size: 40px;
     color: white;
+    padding-top: 15px;
     letter-spacing: 4px;
+    font-weight: 200;
     text-align: center;
+    text-decoration: underline solid 2px white;
   }
 
   #carousel {
@@ -625,3 +627,211 @@ margin-left: 50%;
   body{
     background-color: black;
   }
+
+
+  .carousel-container .image-description {
+    position: absolute;
+    top: 90%;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+    color: black;
+    font-size: 9px;
+    font-family: "Arial";
+    font-weight: bold;
+  }
+
+  .bottom-options{
+    height: 350px;
+
+  }
+
+  .bottom-box-area{
+    height: 350px;
+    margin-left: 10%;
+    margin-right: 10%;
+    list-style: none;
+    display: flex;
+    font-size: 20px;
+    gap: 3rem;
+    
+  }
+
+  .bottom-box-area li{
+    border: 1px solid white;
+    width: 300px;
+    text-align: center;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-family: "Squarefont";
+}
+
+.bottom-box-area li:hover{
+    opacity: 0.7;
+
+}
+
+.cycle-routes{
+    background-image: url("https://media.istockphoto.com/id/945042798/photo/mountain-biker-riding-on-bike-on-forest-dirt-trail.jpg?s=612x612&w=0&k=20&c=wAxWnjVINkH_GVEOGxrcg5TTcaFoEivl1ihtoVkZUtI=");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+}
+
+.electric-bikes{
+    background-image: url("https://s14761.pcdn.co/wp-content/uploads/sites/2/2020/02/Lithium-Ionen-Batterie-EMTB-6-1140x760.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+}
+
+.manual-bikes{
+    background-image: url("https://cdn.shopify.com/s/files/1/2976/1964/files/cornering.jpg?v=1668756209&width=1500");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+}
+
+.payment-options{
+    background-image: url("https://paysimple.com/blog/wp-content/uploads/2017/01/iStock-1164946738-scaled.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+
+}
+.promote{
+    height: 70px;
+    margin-top: -435px;
+
+   
+}
+.promote h3{
+    font-size: 25px;
+    margin-left: 10%;
+    color: white;
+    font-family: "Squarefont";
+    letter-spacing: 4px;
+    text-decoration: solid white underline;
+}
+
+.promote p{
+    font-size: 15px;
+    margin-left: 20%;
+    color: white;
+    font-weight: 500;
+    text-decoration: solid white underline;
+}
+
+.footer-container{
+    margin-top: 200px;
+    height: 400px;
+    background-color: red;
+    display: flex;
+    gap: 185px;
+
+}
+.explore{
+    margin-left: 125px;
+    list-style: none;
+}
+
+.explore li{
+   padding-bottom: 20px;
+}
+
+.explore h3{
+    padding-top: 40px;
+    font-size: 25px;
+    letter-spacing: 2px;
+    font-family: "Squarefont";
+
+}
+
+.contact-us{
+    list-style: none;
+    margin-left: -80px;
+
+}
+
+.contact-us h3{
+    padding-top: 40px;
+    font-size: 25px;
+    letter-spacing: 2px;
+    font-family: "Squarefont";
+}
+
+.contact-us li{
+    padding-bottom: 20px;
+ }
+
+ .news-container{
+    width: 30%;
+    height: 220px;
+ }
+
+ .news-container h3{
+    margin-top: 40px;
+    font-family: "Squarefont";
+    font-size: 20px;
+
+ }
+
+ .news-container p{
+    padding-top: 2px;
+    font-size: 15px;
+
+ }
+ .form-email{
+    width: 300px;
+ }
+
+.form-email input[type="email"]{
+    height: 21px;
+    width: 200px;
+    padding: 5px;
+    border: none;
+    margin-top: 17px;
+    padding-bottom: 7px;
+    border-radius: 3px;
+    position: relative;
+
+}
+
+.form-email .email-btn{
+    height: 34px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding-left: 10px;
+    font-size: 12px;
+    padding-right: 10px;
+}
+
+.socials{
+    height: 120px;
+    width: 300px;
+    position: absolute;
+    margin-top: 250px;
+    left: 350px;
+
+}
+
+.socials h3{
+    font-family: "Squarefont";
+    margin-top: 6px;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.social-links {
+    margin-top: 20px;
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+    font-size: 40px;
+    color: white;
+}
