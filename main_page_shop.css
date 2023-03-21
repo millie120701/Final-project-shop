@@ -126,7 +126,7 @@
     margin-left: 65%;
 }
 
-form {
+.s-form {
     position: relative;
     top: 50%;
     left: 50%;
@@ -169,12 +169,12 @@ input {
     background: #07051a;
 }
 
-form:hover,
+.s-form:hover,
 form:valid {
     cursor: pointer;
 }
 
-form:valid a {
+.s-form:valid a {
   display: block;
 }
 
@@ -366,7 +366,7 @@ form:valid a {
         display: flex;
     }
 
-    form{
+    .s-form{
         border-radius: 12.5px;
         height: 25px;
     }
