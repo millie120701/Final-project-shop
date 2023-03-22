@@ -3,20 +3,36 @@ p {
     margin-bottom: 20px;
   }
 
+.article-image {
+    height: 523px;
+    width: 785px;
+    padding: 20px 40px 0px 40px;
+}
+
 .heading {
-   font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Oswald', sans-serif;
    font-size: large;
    padding: 40px 40px 10px;
    color:antiquewhite
 }
 
 .article-body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: medium;
+    width: 85%;
     padding: 40px;
     color: antiquewhite;
 }
 
 .article-body h2 {
     margin-bottom: 10px;
+    font-style: italic;
+}
+
+#sign-off {
+    font-family: 'Inconsolata', monospace;
+    font-style: normal;
+    font-size: xx-large;
+    padding-top: 20px;
+    padding-bottom: 40px;
 }
