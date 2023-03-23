@@ -343,7 +343,8 @@ form:valid {
     -webkit-user-select: none;
     touch-action: manipulation;
     font-size: 17px;
-    font-family: "DIN Alternate"
+    font-family: "DIN Alternate";
+    z-index: 3;
   }
 
   @media (max-width: 770px){
