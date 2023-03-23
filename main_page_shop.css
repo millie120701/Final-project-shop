@@ -856,3 +856,18 @@ margin-left: 50%;
     color: white;
 }
 
+@media (max-width: 950px){
+  .socials{
+    display: none;
+  }
+  .news-container{
+
+    justify-content: left;
+    margin-left: -400px;
+    margin-top: 200px;
+    width: 300px;
+    
+  }
+
+
+}
