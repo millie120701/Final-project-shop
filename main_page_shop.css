@@ -93,8 +93,6 @@ float: right;
 
 
 
-
-
 .nav-bar .links a:hover{
     opacity: 0.8;
 }
@@ -197,7 +195,7 @@ border-radius: 24px;
 }
 
 .choice-container{
-    height: 40px;
+    height: 50px;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -209,7 +207,7 @@ border-radius: 24px;
 
 .choice-container .choice-bar{
     display: flex;
-    gap: 12rem;
+    gap: 7rem;
     list-style: none;
     color: white;
 }
@@ -239,7 +237,7 @@ border-radius: 24px;
     padding-top: 250px;
     padding-left: 50px;
     font-family: "Doctor Glitch";
-    background: -webkit-linear-gradient(white, red);
+    background: -webkit-linear-gradient(yellow,rgb(207, 40, 40));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -250,6 +248,7 @@ border-radius: 24px;
     padding-left: 47px;
     font-weight: 300;
     font-family: "Airstrike"
+
 }
 .main-img p{
     color: white;
@@ -277,7 +276,7 @@ border-radius: 24px;
     -webkit-user-select: none;
     touch-action: manipulation;
     font-size: 17px;
-    font-family: "DIN Alternate"
+    font-family: "Questrial";
   }
   
   .discover-bikes:before {
@@ -334,8 +333,8 @@ border-radius: 24px;
     border: none;
     outline: none;
     color: black;
-    background-image: linear-gradient(to right, #FFA248 , red);
-    border: solid 3px black;
+    background-image: linear-gradient(to right, #FFA248 ,  rgb(207, 40, 40) 60%);
+    border: solid px black;
     cursor: pointer;
     position: relative;
     z-index: 0;
@@ -415,21 +414,24 @@ border-radius: 24px;
         font-size: 14px;
     }
   }
-  .bottom-container-text{
-    margin-top: -10px;
-    height: 50x;
-  }
 
-  .bottom-container-text h1{
-    font-family: "Squarefont";
-    font-size: 40px;
-    color: white;
-    padding-top: 15px;
-    letter-spacing: 4px;
-    font-weight: 200;
-    text-align: center;
-    text-decoration: underline solid 2px white;
-  }
+.bottom-container{
+  height: 600px;
+  background-color: rgba(82, 82, 82, 0.3);
+}
+
+.bottom-container-text h1{
+  font-family: "Questrial";
+  color: white;
+  float: left;
+  margin-left: 49px;
+  padding-top: 40px;
+  font-size: 35px;
+
+
+}
+
+
 
   #carousel {
     padding-top: 500px;
@@ -614,7 +616,7 @@ margin-left: 50%;
       cubic-bezier(.3, .7, .4, 1.5);
   }
   
-  .button-82-pushable:active .button-82-shadow {
+  .button-82-pushable:axxctive .button-82-shadow {
     transform: translateY(1px);
     transition: transform 34ms;
   }
@@ -855,6 +857,9 @@ margin-left: 50%;
     color: white;
 }
 
+
+
+
 @media (max-width: 950px){
   .socials{
     display: none;
@@ -904,7 +909,12 @@ margin-left: 50%;
 
 }
 
-
 body {
   background-color: black;;
+}
+
+@media (max-width: 1000px){
+.choice-container{
+ display: none;
+}
 }
