@@ -6,35 +6,31 @@
 
 .nav-bar {
     width: 100%;
-    height: 38px;
-    background-color: black;
+    height: 60px;
+    background-color: rgb(24, 24, 24);
     
 }
 
 .nav-bar h2{
     color: white;
     width: max-content;
-    margin-left: 50px;
-    padding-top: 5px;
-    font-family: "Airstrike Bullet";
-    letter-spacing: 2px;
-}
-.nav-bar .logo{
-    color: white;
-    margin-top: -24px;
-    font-size: 23px;
-    margin-left: 10px;
-    width: max-content;
+    margin-left: 18px;
+    padding-top: 6px;
+    font-size: 40px;
+    font-family: "Questrial";
+    font-weight: 900;
+    letter-spacing: -2px;
 }
 
 .nav-bar .links {
     display: flex;
-    gap: 6rem;
-    float: right;
-    margin-right: 14px;
+    gap: 9rem;
+    justify-content: center;
     list-style: none;
     color: white;
-    margin-top: -29px;
+    margin-top: -25px;
+    font-weight: 300;
+    font-family: "Questrial";
 }
 
 .nav-bar .links a {
@@ -52,20 +48,52 @@
     display: none;
 }
 
-@media (max-width: 770px){
-    .toggle_btn {
-        color: white;
-        float: right;
-        margin-top: -31px;
-        margin-right: 10px;
-        font-size: 22px;
-        display: block;
-    }
-    .nav-bar .links {
-        display: none;
-    }
+.nav-bar .links a[href="Log In"] {
+  background-color:  rgba(92, 92, 92, 0.6);
+  padding: 14px;
+  border-radius: 28px;
+}
+
+.basket-container{
+  background-color: rgba(92, 92, 92, 0.6);
+  width: 150px;
+float: right;
+  margin-top: -36px;
+  height: 60px;
+  text-align: right;
+  color: white;
+}
+
+.basket-container h1{
+  font-size: 15px;
+  float: left;
+  margin-left: 10px;
+  font-family: "Questrial";
+  margin-top: 20px;
 
 }
+
+.basket-btn i {
+  font-size: 40px;
+  color: white;
+  margin-right: 10px;
+  margin-top: 8px;
+
+}
+
+.basket-btn{
+  background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
+
+
+
+
+
 
 .nav-bar .links a:hover{
     opacity: 0.8;
@@ -103,15 +131,6 @@
     height: 200px;
 }
 
-.menu-advert{
-    height: 60px;
-    width: 65%;
-    border-bottom: solid white 2px;
-    border-top: solid white 2px;
-    border-right: solid white 2px;
-    margin-top: -62px;
-    background-color: red;
-}
 
 
 .top-menu{
@@ -121,62 +140,6 @@
     height: 60px;
 }
 
-.search-container{
-    height: 60px;
-    margin-left: 65%;
-}
-
-.s-form {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    width: 250px; 
-    height: 50px;
-    background: white;
-    box-sizing: border-box;
-    border-radius: 25px;
-    border: 4px solid white;
-    padding: 5px;
-}
-
-input {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 42.5px;
-    line-height: 30px;
-    outline: 0;
-    border: 0;
-    font-size: 1em;
-    border-radius: 20px;
-    padding: 0 20px;
-}
-
-.fa {
-    box-sizing: border-box;
-    padding: 10px;
-    width: 42.5px;
-    height: 42.5px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    border-radius: 50%;
-    color: white;
-    text-align: center;
-    font-size: 1.2em;
-    background: #07051a;
-}
-
-.s-form:hover,
-form:valid {
-    cursor: pointer;
-}
-
-.s-form:valid a {
-  display: block;
-}
 
 .menu-advert h1{
     color: black;
@@ -192,23 +155,61 @@ form:valid {
     margin-top: 7px;
 }
 
+.search-wrapper{
+margin-top: -12px;
+ float: right;
+ margin-right: 19px;
+}
 
+.search-form i{
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+ 
+}
+
+.search-btn{
+  margin-top: -27px;
+  background-color: rgba(92, 92, 92, 0.6);
+  border: none;
+border-radius: 24px;
+  padding: 12px;
+}
+
+.search-form input{
+  display: none;
+}
+
+.advertisement{
+  height: 50px;
+  width: 100%;
+  background-color: rgb(207, 40, 40);
+  text-align: center;
+
+}
+
+.advertisement h1{
+  font-size: 15px;
+  font-family: "Questrial";
+  vertical-align: center;
+  padding-top: 17px;
+
+}
 
 .choice-container{
     height: 40px;
-    border-bottom: solid white;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
-    border-top: solid white 2px;
+    background-color: rgb(36, 36, 36);
+
 }
 
 
 .choice-container .choice-bar{
     display: flex;
-    gap: 10rem;
+    gap: 12rem;
     list-style: none;
     color: white;
 }
@@ -216,7 +217,7 @@ form:valid {
 .choice-bar li a{
     color:white;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
     font-weight: 500;
 }
@@ -358,7 +359,7 @@ form:valid {
         width: 100%;
         margin-left: 0;
         margin-top: -11px;
-        border-bottom: solid white 2px;
+   
     }
     .search-container{
         margin-left: 220px;
@@ -623,9 +624,7 @@ margin-left: 50%;
   }
   
 
-  body{
-    background-color: black;
-  }
+
 
 
   .carousel-container .image-description {
@@ -868,6 +867,44 @@ margin-left: 50%;
     width: 300px;
     
   }
+}
+
+@media (max-width: 1130px){
+  .search-wrapper{
+    display: none;
+  }
+}
 
 
+
+@media (max-width: 1000px){
+  .basket-container{
+    margin-right: 0px;
+  }
+  .nav-bar .links{
+    gap: 6rem;
+  }
+}
+
+@media (max-width: 880px){
+  .basket-container{
+    display: none;
+  }
+  .nav-bar .links{
+    display: none
+  }
+  .toggle_btn {
+    color: white;
+    float: right;
+    margin-top: -51px;
+    margin-right: 10px;
+    font-size: 30px;
+    display: block;
+}
+
+}
+
+
+body {
+  background-color: black;;
 }
