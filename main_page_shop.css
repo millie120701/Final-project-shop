@@ -417,7 +417,10 @@ border-radius: 24px;
 
 .bottom-container{
   height: 600px;
+  position: relative;
   background-color: rgba(82, 82, 82, 0.3);
+  justify-content: center;
+  align-items: center;
 }
 
 .bottom-container-text h1{
@@ -427,8 +430,6 @@ border-radius: 24px;
   margin-left: 49px;
   padding-top: 40px;
   font-size: 35px;
-
-
 }
 
 
