@@ -226,7 +226,7 @@ border-radius: 24px;
 }
 
 .main-img{
-    height: 775px;
+    height: 700px;
     background-image: url("https://i2-prod.business-live.co.uk/incoming/article17823824.ece/ALTERNATES/s1200b/0_WAU-2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -259,151 +259,6 @@ border-radius: 24px;
 }
 
 
-.product {
-  position: relative;
-  overflow: hidden;
-  padding: 20px;
-}
-
-.product-category {
-  padding: 0 10vw;
-  font-size: 30px;
-  font-weight: 500;
-  margin-bottom: 40px;
-  text-transform: capitalize;
-}
-
-.product-container{
-  padding: 0 10vw;
-  display: flex;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-}
-
-.product-container::-webkit-scrollbar{
-  display: none;
-}
-
-.product-card{
-  flex: 0 0 auto;
-  width: 250px;
-  height: 450px;
-  margin-right: 40px;
-}
-
-.product-image {
-  position: relative;
-  width: 100%;
-  height: 350px;
-  overflow: hidden;
-}
-
-.product-thumb{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.discount-tag {
-  position: absolute;
-  background: #fff;
-  padding: 5px;
-  border-radius: 5px;
-  color: #009688;
-  right: 10px;
-  top: 10px;
-  text-transform: capitalize;
-}
-
-.card-btn{
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 10px;
-  width: 90%;
-  text-transform: capitalize;
-  border: none;
-  outline: none;
-  background: #fff;
-  border-radius: 5px;
-  transition: 0.5s;
-  cursor: pointer;
-  opacity: 0;
-}
-
-.product-card:hover .card-btn{
-  opacity: 1;
-}
-
-.card-btn:hover{
-  background: #009688;
-  color: #fff;
-}
-
-.product-info{
-  width: 100%;
-  height: 100%;
-  padding-top: 10px;
-}
-
-.product-brand {
-  text-transform: uppercase;
-}
-
-.product-short-description{
-  width: 100%;
-  height: 20px;
-  line-height: 20px;
-  overflow: hidden;
-  opacity: 0.5;
-  text-transform: capitalize;
-  margin: 5px 0;
-}
-
-.price{
-  font-weight: 900;
-  font-size: 20px;
-}
-
-.actual-price {
-  margin-left: 20px;
-  opacity: 0.5;
-  text-decoration: line-through;
-}
-
-.pre-btn .nxt-btn{
-  border: none;
-  width: 10vw;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, #fff 100%);
-  cursor: pointer;
-  z-index: 9;
-}
-
-.pre-btn{
-  left: 0;
-  transform: rotate(180deg);
-}
-
-.next-btn{
-  right: 0;
-}
-
-.pre-btn img
-.next-btn img{
-  opacity: 0.2;
-}
-
-.pre-btn:hover img,
-.nxt-btn:hover img{
-  opacity: 1;
-}
 
 .collection-container {
   width: 100%;
@@ -524,6 +379,86 @@ border-radius: 24px;
     font-size: 17px;
     font-family: "DIN Alternate";
     z-index: 3;
+  }
+
+  .mid-section{
+    background-color: white;
+    height: 450px;
+    display: flex;
+  }
+
+  .mid-section h1{
+    font-family: "Airstrike";
+    font-size: 70px;
+    padding-top: 20px;
+    padding-left: 40px;
+    z-index: 1;
+    position: absolute;
+    color: rgb(34, 34, 34);
+    
+  }
+  .mid-section h2{
+    font-family: "Questrial";
+    margin-top: 80px;
+    float: left;
+    position: absolute;
+    font-style: bold;
+    z-index: 1;
+    margin-left: 51px;
+    color: rgb(24, 24, 24);
+  }
+
+  .img-example{
+    background-image: url("https://media.4rgos.it/i/Argos/9195174_R_Z001A?w=750&h=440&qlt=70");
+    height: 450px;
+    background-size: contain;
+    width: 800px;
+    position: absolute;
+    z-index: 0;
+    right: 0;
+    margin-right: -30px;
+    background-repeat: no-repeat;
+  }
+
+  .mid-section p{
+    font-family: "Questrial";
+    margin-top:250px;
+    font-size: 30px;
+    float: left;
+    position: absolute;
+    z-index: 1;
+    margin-left: 51px;
+    color: rgb(24, 24, 24);
+  }
+
+  .bike-btn, .e-bike-btn {
+    font-family: "Questrial";
+    padding: 30px;
+    font-size: 18px;
+    width: 200px;
+    background: none;
+    border-radius: 60px;
+    border: none;
+    z-index: 2;
+    background: #222;
+    text-align: center;;
+    color: white;
+    cursor: pointer;
+
+  }
+
+  .bike-btn, .e-bike-btn span {
+    text-align: center;
+    display: block;
+  }
+  
+  .bike-selections {
+    height: max-content;
+    display: flex;
+    gap: 3rem;
+    margin-left: 40px;
+    margin-top: 300px;
+
   }
 
   @media (max-width: 770px){
@@ -694,132 +629,6 @@ border-radius: 24px;
   
   /*previous or next buttons css*/
   
-  .buttons {
-    position: absolute;
-margin-left: 50%;
-    transform: translateX(-50%);
-    margin-top: -530px;
-  }
-  
-  .button-82-pushable {
-    position: relative;
-    border: none;
-    background: transparent;
-    padding: 0;
-    cursor: pointer;
-    outline-offset: 4px;
-    transition: filter 250ms;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-  }
-  
-  .button-82-shadow {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 12px;
-    background: hsl(0deg 0% 0% / 0.25);
-    will-change: transform;
-    transform: translateY(2px);
-    transition:
-      transform
-      600ms
-      cubic-bezier(.3, .7, .4, 1);
-  }
-  
-  .button-82-edge {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 12px;
-    background: linear-gradient(
-      to left,
-      hsl(340deg 100% 16%) 0%,
-      hsl(340deg 100% 32%) 8%,
-      hsl(340deg 100% 32%) 92%,
-      hsl(340deg 100% 16%) 100%
-    );
-  }
-  
-  .button-82-front {
-    display: block;
-    position: relative;
-    padding: 12px 27px;
-    border-radius: 12px;
-    font-size: 1.1rem;
-    color: black;
-    font-family: "SquareFont";
-    background: hsl(5, 100%, 46%);
-    will-change: transform;
-    transform: translateY(-4px);
-    transition:
-      transform
-      600ms
-      cubic-bezier(.3, .7, .4, 1);
-  }
-  
-  @media (min-width: 768px) {
-    .button-82-front {
-      font-size: 1.25rem;
-      padding: 12px 42px;
-    }
-  }
-  
-  .button-82-pushable:hover {
-    filter: brightness(110%);
-    -webkit-filter: brightness(110%);
-  }
-  
-  .button-82-pushable:hover .button-82-front {
-    transform: translateY(-6px);
-    transition:
-      transform
-      250ms
-      cubic-bezier(.3, .7, .4, 1.5);
-  }
-  
-  .button-82-pushable:active .button-82-front {
-    transform: translateY(-2px);
-    transition: transform 34ms;
-  }
-  
-  .button-82-pushable:hover .button-82-shadow {
-    transform: translateY(4px);
-    transition:
-      transform
-      250ms
-      cubic-bezier(.3, .7, .4, 1.5);
-  }
-  
-  .button-82-pushable:axxctive .button-82-shadow {
-    transform: translateY(1px);
-    transition: transform 34ms;
-  }
-  
-  .button-82-pushable:focus:not(:focus-visible) {
-    outline: none;
-  }
-  
-
-
-
-
-  .carousel-container .image-description {
-    position: absolute;
-    top: 90%;
-    width: 100%;
-    text-align: center;
-    z-index: 1;
-    color: black;
-    font-size: 9px;
-    font-family: "Arial";
-    font-weight: bold;
-  }
 
   .bottom-options{
     height: 350px;
@@ -926,7 +735,7 @@ margin-left: 50%;
 }
 
 .footer-container{
-    margin-top: 200px;
+
     height: 400px;
     background-color: red;
     display: flex;
