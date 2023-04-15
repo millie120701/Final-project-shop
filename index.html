@@ -30,8 +30,18 @@
       </div>
       <div class="search-wrapper">
         <form class="search-form">
-          <input type="text" placeholder="Search..." />
-          <button class="search-btn" type="submit">
+          <input
+            id="panel"
+            class="search-form-input"
+            type="text"
+            placeholder="Search..."
+          />
+          <button
+            class="search-btn"
+            type="submit"
+            id="search-b"
+            onclick="myFunction()"
+          >
             <i class="fas fa-search"></i>
           </button>
         </form>
@@ -137,5 +147,12 @@
       </div>
     </footer>
     <script src="main_page.js"></script>
+    <script>
+      function myFunction() {
+        event.preventDefault();
+        document.getElementById("panel").style.display = "block";
+        document.getElementbyId("search-b").style.display = "none";
+      }
+    </script>
   </body>
 </html>
