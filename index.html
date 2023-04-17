@@ -13,8 +13,8 @@
   </head>
   <header>
     <div class="nav-bar">
-      <h2>BikeShop</h2>
-      <ul class="links">
+      <h2 id="logo-name">BikeShop</h2>
+      <ul id="link-bar" class="links">
         <li><a href="Gift Cards">Store Locator</a></li>
         <li><a href="Location">Region</a></li>
         <li>
@@ -22,17 +22,18 @@
         </li>
         <li><a href="Log In">Log In</a></li>
       </ul>
-      <div class="basket-container">
+      <div id="basket-c" class="basket-container">
         <h1>Basket</h1>
         <button class="basket-btn">
           <i class="fa-solid fa-cart-shopping"></i>
         </button>
       </div>
-      <div class="search-wrapper">
+      <div id="search-wrap" class="search-wrapper">
         <form class="search-form">
           <input
             id="panel"
             class="search-form-input"
+            autocomplete="off"
             type="text"
             placeholder="Search..."
           />
@@ -48,7 +49,7 @@
       </div>
     </div>
     <div class="toggle_btn">
-      <i class="fa-solid fa-bars"></i>
+      <i id="search-icon" class="fa-solid fa-bars"></i>
     </div>
     <div class="dropdown-menu">
       <li><a href="Gift Cards">Gift Cards</a></li>
@@ -147,12 +148,5 @@
       </div>
     </footer>
     <script src="main_page.js"></script>
-    <script>
-      function myFunction() {
-        event.preventDefault();
-        document.getElementById("panel").style.display = "block";
-        document.getElementbyId("search-b").style.display = "none";
-      }
-    </script>
   </body>
 </html>
